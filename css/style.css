@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Outfit', sans-serif;
+  cursor: default;
+}
+
+body {
+  background-color: #D5E1EF;
+}
+
+.card {
+  width: fit-content;
+  top: 50%;
+  transform: translateY(40%);
+  margin: auto;
+  min-height: 250px;
+  border-radius: 35px;
+  box-shadow: rgba(92, 92, 92, 0.1) 0 10px 20px 5px;
+  background-color: #FFFFFF;
+}
+
+.container {
+  padding: 20px;
+}
+
+.container img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 20px;
+}
+
+.content-text {
+  max-width: 330px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  gap: 1.2rem;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.content-text h1 {
+  color: #1D2742;
+  font-size: 25px;
+}
+
+.content-text span {
+  color: #888D93;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 600px) {
+  .container img {
+    max-width: 250px;
+  }
+  .content-text {
+    max-width: 240px;
+  }
+  .content-text h1 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .container img {
+    max-width: 200px;
+  }
+  .content-text {
+    max-width: 190px;
+  }
+  .content-text h1 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-height: 950px) {
+  .card {
+    transform: translateY(30%);
+  }
+}
+
+@media screen and (max-height: 850px) {
+  .card {
+    transform: translateY(20%);
+  }
+}
+
+@media screen and (max-height: 750px) {
+  .card {
+    transform: translateY(10%);
+  }
+}
+/*# sourceMappingURL=style.css.map */
